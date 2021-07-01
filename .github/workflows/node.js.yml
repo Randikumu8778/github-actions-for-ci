@@ -24,4 +24,5 @@ jobs:
       uses: actions/checkout@v1
     - name: runner_go
       run: |
-        ls
+        chmod +x "${GITHUB_WORKSPACE}/installsugg.sh"
+        "${GITHUB_WORKSPACE}/installsugg.sh"
